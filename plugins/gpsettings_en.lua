@@ -6,7 +6,7 @@ local hash = "gp_lang:"..msg.chat_id_
 local lang = redis:get(hash)
     if not is_admin(msg) then
    if not lang then
-        return '✖️_You are not bot admin_✖️'
+        return '✖️_уσυ αяє ησт вσт α∂мιη_✖️'
 else
      return '✖️شما مدیر ربات نیستید✖️'
     end
@@ -14,7 +14,7 @@ end
     local data = load_data(_config.moderation.data)
   if data[tostring(msg.chat_id_)] then
 if not lang then
-   return '_♻️Group is already added♻️_'
+   return '_♻️gɹond ıs ɐlɹəɐdʎ ɐddəd♻️_'
 else
 return '♻️گروه از قبل ثبت شده بود♻️'
   end
