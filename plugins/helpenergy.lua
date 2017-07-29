@@ -117,7 +117,7 @@ lock = [[
 【✓】 !lock inline
 【✘】 !unlock inline
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖powered by: *@mafia_boy*)]]
+🔖powered by: *@www_sik_ir*)]]
 
 elseif lang then
 
@@ -234,7 +234,7 @@ lock = [[
 【✓】 !lock inline
 【✘】 !unlock inline
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖powered by: *@mafia_boy*)]]
+🔖powered by: *@www_sik_ir*)]]
 end
 return lock
 end
@@ -369,7 +369,7 @@ helpfun = [[
 
  تنظیمات    👉👈   settings!                
  ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖powered by: *@mafia_boy* ]]
+🔖powered by: *@www_sik_ir* ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, helpfun, 1, 'md')
 else
 
@@ -501,7 +501,7 @@ helpfun = [[
 
  تنظیمات    👉👈   settings!                
  ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖powered by: *@mafia_boy* ]]
+🔖powered by: *@www_sik_ir* ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, helpfun, 1, 'md')
 end
 end
@@ -616,7 +616,7 @@ _💡این راهنما فقط برای سودو ها/ادمین های ربا�
 💡`این به این معناست که فقط سودو ها/ادمین های ربات میتوانند از دستورات بالا استفاده کنند!`
 💡*This means only the sudoers and its bot admins can use mentioned commands.*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖powered by: *@mafia_boy* ]]
+🔖powered by: *@www_sik_ir* ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 else
 
@@ -727,7 +727,7 @@ _💡این راهنما فقط برای سودو ها/ادمین های ربا�
 💡`این به این معناست که فقط سودو ها/ادمین های ربات میتوانند از دستورات بالا استفاده کنند!`
 💡*This means only the sudoers and its bot admins can use mentioned commands.*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖powered by: *@mafia_boy* ]]
+🔖powered by: *@www_sik_ir* ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 end
 end
@@ -773,7 +773,7 @@ text = [[
 💡*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 💡_You can use_ *[!/#]* _at the beginning of commands._
-🔖powered by: *@mafia_boy* ]]
+🔖powered by: *@www_sik_ir* ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 else
 
@@ -816,7 +816,7 @@ text = [[
 🔘*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔘_You can use_ *[!/#]* _at the beginning of commands._
-🔖powered by: *@mafia_boy* ]]
+🔖powered by: *@www_sik_ir* ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 end
 end
@@ -837,6 +837,6 @@ patterns ={
 }, 
 run =run
 }
------my_name_is_ehsan*#*@mafia_boy*
------@ENERGY_TEAM     FOR UPDATE
+-----my_name_is_ehsan*#*@www_sik_ir*
+-----@mohammadbots     FOR UPDATE
 -----لطفا پیام بالا رو پاک نکنید
