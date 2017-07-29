@@ -1,5 +1,5 @@
-﻿-----my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
+﻿-----my_name_is_ehsan*#@www_sik_ir
+-----@mohammadbots     FOR UPDATE
 -----لطفا پیام بالا رو پاک نکنید
 local function run(msg, matches) 
 if matches[1] == "setpm" then 
@@ -55,6 +55,6 @@ patterns ={
 run = run 
 }
 
------my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
+-----my_name_is_ehsan*#@www_sik_ir
+-----@mohammadbots     FOR UPDATE
 -----لطفا پیام بالا رو پاک نکنید
