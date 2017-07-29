@@ -1,5 +1,5 @@
------my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
+-----my_name_is_ehsan*#@www_sik_ir
+-----@mohammadbots     FOR UPDATE
 -----لطفا پیام بالا رو پاک نکنید
 local function pre_process(msg)
 chat = msg.chat_id_
@@ -855,6 +855,6 @@ pre_process = pre_process
 
 -- کد های پایین در ربات نشان داده نمیشوند
 -- http://bom_bang_team
------my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
+-----my_name_is_ehsan*#@www_sik_ir
+-----@mohammadbots     FOR UPDATE
 -----لطفا پیام بالا رو پاک نکنید
