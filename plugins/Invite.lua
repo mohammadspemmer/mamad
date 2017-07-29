@@ -1,5 +1,5 @@
------my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
+-----my_name_is_ehsan*#@www_sik_ir 
+-----@mohammadbots     FOR UPDATE
 -----لطفا پیام بالا رو پاک نکنید
 
 function resolve_username(username,cb)
@@ -63,6 +63,6 @@ patterns = {
 "^[!#/](invite) (.*)$",},
 run =run,}
 
------my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
+-----my_name_is_ehsan*#@www_sik_ir
+-----@mohammadbots     FOR UPDATE
 -----لطفا پیام بالا رو پاک نکنید
