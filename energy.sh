@@ -25,20 +25,20 @@ install() {
 }
 
 function print_logo() {
-	green "         ENERGY  EHSAN    RICH         ENERGY"
-	green "         ENERGY  EHSAN    RICH         ENERGY"
-	green "         ENERGY  EHSAN    RICH         ENERGY"
-	green "         ENERGY  EHSAN    RICH         ENERGY"
+	green "         AYTOR  AYTOR    RICH         AYTOR"
+	green "         AYTOR  AYTOR    RICH         AYTOR"
+	green "         AYTOR  AYTOR    RICH         AYTOR"
+	green "         AYTOR  AYTOR    RICH         AYTOR"
 	echo -e "\n\e[0m"
 }
 
 function logo_play() {
     declare -A txtlogo
     seconds="0.010"
-    txtlogo[1]="ENERGY  EHSAN    RICH         ENERGY"
-    txtlogo[2]="ENERGY  EHSAN    RICH         ENERGY"
-    txtlogo[3]="ENERGY  EHSAN    RICH         ENERGY"
-    txtlogo[4]="ENERGY  EHSAN    RICH         ENERGY"
+    txtlogo[1]="AYTOR  AYTOR    RICH         AYTOR"
+    txtlogo[2]="AYTOR  AYTOR    RICH         AYTOR"
+    txtlogo[3]="AYTOR  AYTOR    RICH         AYTOR"
+    txtlogo[4]="AYTOR  AYTOR    RICH         AYTOR"
     printf "\e[31m\t"
     for i in ${!txtlogo[@]}; do
         for x in `seq 0 ${#txtlogo[$i]}`; do
@@ -55,10 +55,10 @@ function energy_team() {
 	echo -e "\e[0m"
 	green "     >>>>                       edir 4 source                                               "
 	green "     >>>>                       beyond.bombang and...                                       "
-	white "     >>>>                       edited by ehsan mafia_boy   @mafia_boy                      "
+	white "     >>>>                       edited by ehsan www_sik_ir   @www_sik_ir                    "
 	white "     >>>>                       @www_sik_ir                                                 "
 	red   "     >>>>                       @mohammadbots                                               "
-	red   "     >>>>                       ENERGY_BOT                                                  "
+	red   "     >>>>                       AYTOR_BOT                                                  "
 	echo -e "\e[0m"
 }
 
