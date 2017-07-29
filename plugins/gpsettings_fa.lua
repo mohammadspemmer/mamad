@@ -6,7 +6,7 @@ local hash = "gp_lang:"..msg.chat_id_
 local lang = redis:get(hash)
     if not is_admin(msg) then
    if not lang then
-        return '✖️_You are not bot admin_✖️'
+        return '✖️_уσυ αяє ησт вσт α∂мιη_✖️'
 else
      return '✖️شما مدیر ربات نیستید✖️'
     end
@@ -14,7 +14,7 @@ end
     local data = load_data(_config.moderation.data)
   if data[tostring(msg.chat_id_)] then
 if not lang then
-   return '_♻️Group is already added♻️_'
+   return '_♻️gяσυρ ιѕ αℓяєα∂у α∂∂є∂♻️_'
 else
 return '♻️گروه از قبل ثبت شده بود♻️'
   end
@@ -59,7 +59,7 @@ end
       data[tostring(groups)][tostring(msg.chat_id_)] = msg.chat_id_
       save_data(_config.moderation.data, data)
     if not lang then
-  return '*✔️Group has been added✔️*'
+  return '*✔️gяσυρ нαѕ вєєη α∂∂є∂✔️*'
 else
   return '✔️گروه با موفقیت ثبت شد✔️'
 end
@@ -71,7 +71,7 @@ local lang = redis:get(hash)
     -- superuser and admins only (because sudo are always has privilege)
       if not is_admin(msg) then
      if not lang then
-        return '✖️_You are not bot admin_✖️'
+        return '✖️_уσυ αяє ησт вσт α∂мιη_✖️'
    else
         return '✖️شما مدیر ربات نیستید✖️'
     end
@@ -80,7 +80,7 @@ local lang = redis:get(hash)
     local receiver = msg.chat_id_
   if not data[tostring(msg.chat_id_)] then
   if not lang then
-    return '✖️_Group is not added_✖️'
+    return '✖️_gяσυρ ιѕ ησт α∂∂є∂_✖️'
 else
     return '✖️گروه ثبت نشده است✖️'
    end
@@ -95,7 +95,7 @@ else
       end data[tostring(groups)][tostring(msg.chat_id_)] = nil
       save_data(_config.moderation.data, data)
  if not lang then
-  return '✖️*Group has been removed*✖️'
+  return '✖️*gяσυρ нαѕ вєєη яємσνє∂*✖️'
  else
   return '✖️گروه با موفقیت حذف شد✖️'
 end
@@ -157,7 +157,7 @@ local lang = redis:get(hash)
     local i = 1
   if not data[tostring(msg.chat_id_)] then
   if not lang then
-    return "✖️_Group is not added_✖️"
+    return "✖️_gяσυρ ιѕ ησт α∂∂є∂_✖️"
  else
     return "✖️گروه ثبت نشده است✖️"
   end
@@ -190,7 +190,7 @@ local lang = redis:get(hash)
     local i = 1
   if not data[tostring(msg.chat_id_)] then
 if not lang then
-    return "✖️_Group is not added_✖️"
+    return "✖️_gяσυρ ιѕ ησт α∂∂є∂_✖️"
 else
 return "✖️گروه ثبت نشده است✖️"
   end
