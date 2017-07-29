@@ -107,7 +107,7 @@ function create_config( )
 		"delall",
 
 	},
-    sudo_users = {323046540, 323046540, sudo_id},
+    sudo_users = {257976506, 257976506, sudo_id},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
@@ -122,7 +122,7 @@ An advanced administration bot based on https://valtman.name/telegram-cli
 》beyond_permag_bombang
 
 》Our channel :
-》@RICHENERGY%%@energy_team
+》@mohammadbots%%@mohammadbots
 
 》Our website :
 》http://telebombang.blogfa.com
