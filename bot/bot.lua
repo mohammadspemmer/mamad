@@ -1,6 +1,6 @@
--- #@ENERGY_TEAM
------my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
+-- #@mohammadbots
+-----my_name_is_ehsan*#@www_sik_ir
+-----@mohammadbots     FOR UPDATE
 -----لطفا پیام بالا رو پاک نکنید
 
 tdcli = dofile('./tg/tdcli.lua')
@@ -21,7 +21,7 @@ local notify = lgi.require('Notify')
 notify.init ("Telegram updates")
 chats = {}
 plugins = {}
-helper_id = 323046540 --Put Your Helper Bot ID Here
+helper_id = 257976506 --Put Your Helper Bot ID Here
 
 function do_notify (user, msg)
 	local n = notify.Notification.new(user, msg)
@@ -416,6 +416,6 @@ function tdcli_update_callback (data)
 	end
 end
 
------my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
+-----my_name_is_ehsan*#@www_sik_ir
+-----@mohammadbots     FOR UPDATE
 -----لطفا پیام بالا رو پاک نکنید
