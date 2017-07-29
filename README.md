@@ -4,12 +4,12 @@
 sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev ppa-purge python3-pip python3-dev
 
 ************************************************************************
-cd $HOME && git clone https://github.com/mohammadspemmer/mamad.git && cd energy && chmod +x energy.sh && ./energy.sh install && ./energy.sh
+cd $HOME && git clone https://github.com/mohammadspemmer/mamad.git && cd mamad && chmod +x energy.sh && ./energy.sh install && ./energy.sh
 ________
 *****************
 نصب اتولانچ
 --------------
-cd energy 
+cd mamad 
 
 chmod +x autoenergy.sh 
 
@@ -19,7 +19,7 @@ screen ./autoenergy.sh
 --------------
 killall screen
 
-cd energy && chmod +x autoenergy.sh && screen ./autoenergy.sh
+cd mamad && chmod +x autoenergy.sh && screen ./autoenergy.sh
 
 *****************
 --------------
