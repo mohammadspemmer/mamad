@@ -56,8 +56,8 @@ function energy_team() {
 	green "     >>>>                       edir 4 source                                               "
 	green "     >>>>                       beyond.bombang and...                                       "
 	white "     >>>>                       edited by ehsan mafia_boy   @mafia_boy                      "
-	white "     >>>>                       @RICH_ENERGY                                                "
-	red   "     >>>>                       @ENERGY_TEAM                                                "
+	white "     >>>>                       @www_sik_ir                                                 "
+	red   "     >>>>                       @mohammadbots                                               "
 	red   "     >>>>                       ENERGY_BOT                                                  "
 	echo -e "\e[0m"
 }
