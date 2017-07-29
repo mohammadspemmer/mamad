@@ -1,9 +1,9 @@
------my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
------لطفا پیام بالا رو پاک نکنید
+-----my_name_is_ehsan*#@www_sik_ir
+-----@mohammadbots     FOR UPDATE
+-----Ù„Ø·ÙØ§ Ù¾ÛŒØ§Ù… Ø¨Ø§Ù„Ø§ Ø±Ùˆ Ù¾Ø§Ú© Ù†Ú©Ù†ÛŒØ¯
 
 local function run(msg, matches)
-if matches[1] == 'cleanbot' or '�ǘ ���� ������' then
+if matches[1] == 'cleanbot' or 'Ç˜ ˜ÑÏä ÑÈÇÊåÇ' then
   function clbot(arg, data)
     for k, v in pairs(data.members_) do
       kick_user(v.user_id_, msg.to.id)
@@ -18,7 +18,7 @@ return {
 
 patterns ={ 
 
-"^پاک کردن ربات ها$",
+"^Ù¾Ø§Ú© Ú©Ø±Ø¯Ù† Ø±Ø¨Ø§Øª Ù‡Ø§$",
 '^[!/#](cleanbot)$'
 
  
@@ -26,6 +26,6 @@ patterns ={
   run = run
 }
  
- -----my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
------لطفا پیام بالا رو پاک نکنید
+ -----my_name_is_ehsan*#@www_sik_ir
+-----@mohammadbots     FOR UPDATE
+-----Ù„Ø·ÙØ§ Ù¾ÛŒØ§Ù… Ø¨Ø§Ù„Ø§ Ø±Ùˆ Ù¾Ø§Ú© Ù†Ú©Ù†ÛŒØ¯
