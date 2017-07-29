@@ -1,5 +1,5 @@
------my_name_is_ehsan*#*@mafia_boy*
------@ENERGY_TEAM     FOR UPDATE
+-----my_name_is_ehsan*#*@www_sik_ir*
+-----@mohammadbots     FOR UPDATE
 -----لطفا پیام بالا رو پاک نکنید
 local function run (msg , matches)
 if matches[1]:lower() == "lock help" or matches[1] == 'راهنما قفل' and is_mod(msg) then
