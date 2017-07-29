@@ -1,6 +1,6 @@
 
 
---Special Thx To @aliaz003 CH;@RICHENERGY
+--Special Thx To @www_sik_ir CH;@mohammadbots
 --------------------------------
 
 local function run_bash(str)
@@ -523,4 +523,4 @@ return {
 	run = run,
 	}
 
---#EDITby @RICHENERGY:)
+--#EDITby @mohammadbots:)
