@@ -314,7 +314,7 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not lang then
 helpfun_en = [[
-🔘_ENERGY.دستورات سرگرمی:_
+🔘_AYTOR.دستورات سرگرمی:_
 
 ◾️*!time*
 ◾️*ساعت*
@@ -352,11 +352,11 @@ helpfun_en = [[
 🔘*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔘_You can use_ *[!/#]* _at the beginning of commands._
-🌐 @RICHENERGY 🌐 ;)]]
+🌐 @mohammadbots 🌐 ;)]]
 else
 
 helpfun_en = [[
-🔘_ENERGY.دستورات سرگرمی:_
+🔘_AYTOR.دستورات سرگرمی:_
 
 ◾️*!time*
 ◾️*ساعت*
@@ -394,7 +394,7 @@ helpfun_en = [[
 🔘*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔘_You can use_ *[!/#]* _at the beginning of commands._
-🌐 @RICHENERGY 🌐 ;)]]
+🌐 @mohammadbots 🌐 ;)]]
 end
 return helpfun_en..msg_caption
 end
@@ -404,7 +404,7 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not lang then
 helpfun_fa = [[
-🔘_ENERGY.دستورات سرگرمی:_
+🔘_AYTOR.دستورات سرگرمی:_
 
 ◾️*!time*
 ◾️*ساعت*
@@ -442,11 +442,11 @@ helpfun_fa = [[
 🔘*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔘_You can use_ *[!/#]* _at the beginning of commands._
-🌐 @RICHENERGY 🌐 ;)]]
+🌐 @mohammadbots 🌐 ;)]]
 else
 
 helpfun_fa = [[
-🔘_ENERGY.دستورات سرگرمی:_
+🔘_AYTOR.دستورات سرگرمی:_
 
 ◾️*!time*
 ◾️*ساعت*
@@ -484,7 +484,7 @@ helpfun_fa = [[
 🔘*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔘_You can use_ *[!/#]* _at the beginning of commands._
-🌐 @RICHENERGY 🌐 ;)]]
+🌐 @mohammadbots 🌐 ;)]]
 end
 return helpfun_fa..msg_caption
 end
