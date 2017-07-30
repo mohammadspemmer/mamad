@@ -114,7 +114,7 @@ if data[tostring(msg.chat_id_)]['filterlist'][(word)] then
    if not lang then
          return "_Word_ *"..word.."* _is already filtered_"
             else
-         return "_کلمه_ *"..word.."* _از قبل فیلتر بود_"
+         return "_کلمه_ *"..word.."* _این متن از قبل فیلتر بود_"
     end
 end
    data[tostring(msg.chat_id_)]['filterlist'][(word)] = true
@@ -146,7 +146,7 @@ local lang = redis:get(hash)
        if not lang then
          return "_Word_ *"..word.."* _is not filtered_"
        elseif lang then
-         return "_کلمه_ *"..word.."* _از قبل فیلتر نبود_"
+         return "_کلمه_ *"..word.."* _این متن از قبل فیلتر نبود_"
       end
    end
 end
@@ -607,7 +607,7 @@ if lock_link == "yes" then
 if not lang then
  return "🔐*Link* _Posting Is Already Locked_🔐"
 elseif lang then
- return "🔐قفل لینک فعال بود🔐"
+ return "🔐قفل لینک از قبل فعال بود🔐"
 end
 else
 data[tostring(target)]["settings"]["lock_link"] = "yes"
@@ -636,7 +636,7 @@ local lock_link = data[tostring(target)]["settings"]["lock_link"]
 if not lang then
 return "🔓*Link* _Posting Is Not Locked_🔓" 
 elseif lang then
-return "🔓قفل لینک غیرفعال بود🔓"
+return "🔓قفل لینک ازقبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_link"] = "no" save_data(_config.moderation.data, data) 
@@ -667,7 +667,7 @@ if lock_fosh == "yes" then
 if not lang then
  return "🔐*Fosh* _Posting Is Already Locked_🔐"
 elseif lang then
- return "🔐فعال فحش فعال بود🔐"
+ return "🔐فعال فحش از قبل فعال بود🔐"
 end
 else
 data[tostring(target)]["settings"]["lock_fosh"] = "yes"
@@ -696,7 +696,7 @@ local lock_fosh = data[tostring(target)]["settings"]["lock_fosh"]
 if not lang then
 return "🔓*Fosh* _Is Not Locked_🔓" 
 elseif lang then
-return "🔓فعال فحش غیرفعال بود🔓"
+return "🔓فعال فحش از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_fosh"] = "no" save_data(_config.moderation.data, data) 
@@ -725,7 +725,7 @@ if lock_tag == "yes" then
 if not lang then
  return "🔐*Tag* _Posting Is Already Locked_🔐"
 elseif lang then
- return "🔐قفل تگ فعال بود🔐"
+ return "🔐قفل تگ از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_tag"] = "yes"
@@ -754,7 +754,7 @@ local lock_tag = data[tostring(target)]["settings"]["lock_tag"]
 if not lang then
 return "🔓*Tag* _Posting Is Not Locked_🔓" 
 elseif lang then
-return "🔓قفل تگ غیرفعال بود🔓"
+return "🔓قفل تگ از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_tag"] = "no" save_data(_config.moderation.data, data) 
@@ -783,7 +783,7 @@ if lock_mention == "yes" then
 if not lang then
  return "🔐*Mention* _Posting Is Already Locked_🔐"
 elseif lang then
- return "🔐قفل فراخوانی افراد >> فعال بود🔐"
+ return "🔐قفل فراخوانی افراد >> از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_mention"] = "yes"
@@ -812,7 +812,7 @@ local lock_mention = data[tostring(target)]["settings"]["lock_mention"]
 if not lang then
 return "🔓*Mention* _Posting Is Not Locked_🔓" 
 elseif lang then
-return "🔓قفل فراخوانی افراد غیرفعال بود🔓"
+return "🔓قفل فراخوانی افراد از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_mention"] = "no" save_data(_config.moderation.data, data) 
@@ -841,7 +841,7 @@ if lock_arabic == "yes" then
 if not lang then
  return "🔐*Arabic/Persian* _Posting Is Already Locked_🔐"
 elseif lang then
- return "🔐قفل کلمات عربی/فارسی فعال بود🔐"
+ return "🔐قفل کلمات عربی/فارسی از قبل فعال بود🔐"
 end
 else
 data[tostring(target)]["settings"]["lock_arabic"] = "yes"
@@ -870,7 +870,7 @@ local lock_arabic = data[tostring(target)]["settings"]["lock_arabic"]
 if not lang then
 return "🔓*Arabic/Persian* _Posting Is Not Locked_🔓" 
 elseif lang then
-return "🔓قفل کلمات عربی/فارسی غیرفعال بود🔓"
+return "🔓قفل کلمات عربی/فارسی از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_arabic"] = "no" save_data(_config.moderation.data, data) 
@@ -899,7 +899,7 @@ if lock_edit == "yes" then
 if not lang then
  return "🔐*Editing* _Is Already Locked_🔐"
 elseif lang then
- return " 🔐قفل ویرایش پیام فعال بود🔐"
+ return " 🔐قفل ویرایش پیام از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_edit"] = "yes"
@@ -928,7 +928,7 @@ local lock_edit = data[tostring(target)]["settings"]["lock_edit"]
 if not lang then
 return "🔓*Editing* _Is Not Locked_🔓" 
 elseif lang then
-return "🔓قفل ویرایش پیام غیرفعال بود🔓"
+return "🔓قفل ویرایش پیام از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_edit"] = "no" save_data(_config.moderation.data, data) 
@@ -957,7 +957,7 @@ if lock_spam == "yes" then
 if not lang then
  return "🔐*Spam* _Is Already Locked_🔐"
 elseif lang then
- return "🔐قفل هرزنامه فعال بود🔐"
+ return "🔐قفل هرزنامه از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_spam"] = "yes"
@@ -986,7 +986,7 @@ local lock_spam = data[tostring(target)]["settings"]["lock_spam"]
 if not lang then
 return "🔓*Spam* _Posting Is Not Locked_🔓" 
 elseif lang then
- return "🔓قفل هرزنامه غیرفعال بود🔓"
+ return "🔓قفل هرزنامه از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_spam"] = "no" save_data(_config.moderation.data, data)
@@ -1015,7 +1015,7 @@ if lock_flood == "yes" then
 if not lang then
  return "🔐*Flooding* _Is Already Locked_🔐"
 elseif lang then
- return "🔐قفل پیام رگبار فعال بود🔐"
+ return "🔐قفل پیام رگبار از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["flood"] = "yes"
@@ -1044,7 +1044,7 @@ local lock_flood = data[tostring(target)]["settings"]["flood"]
 if not lang then
 return "🔓*Flooding* _Is Not Locked_🔓" 
 elseif lang then
-return "🔓قفل پیام رگبار غیرفعال بود🔓"
+return "🔓قفل پیام رگبار از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["flood"] = "no" save_data(_config.moderation.data, data) 
@@ -1073,7 +1073,7 @@ if lock_bots == "yes" then
 if not lang then
  return "🔐*Bots* _Protection Is Already Enabled_🔐"
 elseif lang then
- return "🔐محافظت از گروه در برابر ربات ها فعال بود🔐"
+ return "🔐محافظت از گروه در برابر ربات ها از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_bots"] = "yes"
@@ -1102,7 +1102,7 @@ local lock_bots = data[tostring(target)]["settings"]["lock_bots"]
 if not lang then
 return "🔓*Bots* _Protection Is Not Enabled_🔓" 
 elseif lang then
-return "🔓محافظت از گروه در برابر ربات ها غیرفعال بود🔓"
+return "🔓محافظت از گروه در برابر ربات ها از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_bots"] = "no" save_data(_config.moderation.data, data) 
@@ -1131,7 +1131,7 @@ if lock_markdown == "yes" then
 if not lang then 
  return "🔐*Markdown* _Posting Is Already Locked_🔐"
 elseif lang then
- return "🔐قفل پیام های دارای فونت فعال بود🔐"
+ return "🔐قفل پیام های دارای فونت از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_markdown"] = "yes"
@@ -1160,7 +1160,7 @@ local lock_markdown = data[tostring(target)]["settings"]["lock_markdown"]
 if not lang then
 return "🔓*Markdown* _Posting Is Not Locked_🔓"
 elseif lang then
-return "🔓قفل پیام های دارای فونت غیرفعال بود🔓"
+return "🔓قفل پیام های دارای فونت از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_markdown"] = "no" save_data(_config.moderation.data, data) 
@@ -1189,7 +1189,7 @@ if lock_webpage == "yes" then
 if not lang then
  return "🔐*Webpage* _Is Already Locked_🔐"
 elseif lang then
- return "🔐قفل صفحات وب فعال بود🔐"
+ return "🔐قفل صفحات وب از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_webpage"] = "yes"
@@ -1218,7 +1218,7 @@ local lock_webpage = data[tostring(target)]["settings"]["lock_webpage"]
 if not lang then
 return "🔓*Webpage* _Is Not Locked_🔓" 
 elseif lang then
-return "🔓قفل صفحات وب غیرفعال بود🔓"
+return "🔓قفل صفحات وب از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_webpage"] = "no"
@@ -1446,7 +1446,7 @@ if lock_all == "yes" then
 if not lang then
 return "🔐*lock All* _Is Already Enabled_🔐" 
 elseif lang then
-return "🔐قفل همه(قفل گروه) فعال بود🔐"
+return "🔐قفل همه(قفل گروه)از قبل فعال بود🔐"
 end
 else 
 data[tostring(target)]["settings"]["lock_all"] = "yes"
@@ -1475,7 +1475,7 @@ if lock_all == "no" then
 if not lang then
 return "🔓*lock All* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل همه(قفل گروه) غیرفعال بود🔓"
+return "🔓قفل همه(قفل گروه)از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_all"] = "no"
@@ -1505,7 +1505,7 @@ if lock_gif == "yes" then
 if not lang then
  return "🔐*lock Gif* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل گیف فعال بود🔐"
+ return "🔐قفل گیف از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_gif"] = "yes" 
@@ -1534,7 +1534,7 @@ local lock_gif = data[tostring(target)]["settings"]["lock_gif"]
 if not lang then
 return "🔐*lock Gif* _Is Already Disabled_🔐" 
 elseif lang then
-return "🔐قفل گیف غیرفعال بود🔐"
+return "🔐قفل گیف از قبل غیرفعال بود🔐"
 end
 else 
 data[tostring(target)]["settings"]["lock_gif"] = "no"
@@ -1563,7 +1563,7 @@ if lock_game == "yes" then
 if not lang then
  return "🔐*lock Game* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل بازی های تحت وب فعال بود🔐"
+ return "🔐قفل بازی های تحت وب از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_game"] = "yes" 
@@ -1592,7 +1592,7 @@ local lock_game = data[tostring(target)]["settings"]["lock_game"]
 if not lang then
 return "🔓*lock Game* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل بازی های تحت وب غیرفعال بود🔓"
+return "🔓قفل بازی های تحت وب از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_game"] = "no"
@@ -1621,7 +1621,7 @@ if lock_inline == "yes" then
 if not lang then
  return "🔐*lock Inline* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل کیبورد شیشه ای فعال بود🔐"
+ return "🔐قفل کیبورد شیشه ای از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_inline"] = "yes" 
@@ -1650,7 +1650,7 @@ local lock_inline = data[tostring(target)]["settings"]["lock_inline"]
 if not lang then
 return "🔓*lock Inline* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل کیبورد شیشه ای غیرفعال بود🔓"
+return "🔓قفل کیبورد شیشه ای از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_inline"] = "no"
@@ -1679,7 +1679,7 @@ if lock_text == "yes" then
 if not lang then
  return "🔐*lock Text* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل متن فعال بود🔐"
+ return "🔐قفل متن از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_text"] = "yes" 
@@ -1708,7 +1708,7 @@ local lock_text = data[tostring(target)]["settings"]["lock_text"]
 if not lang then
 return "🔓*lock Text* _Is Already Disabled_🔓"
 elseif lang then
-return "🔓قفل متن غیرفعال بود🔓" 
+return "🔓قفل متن از قبل غیرفعال بود🔓" 
 end
 else 
 data[tostring(target)]["settings"]["lock_text"] = "no"
@@ -1737,7 +1737,7 @@ if lock_photo == "yes" then
 if not lang then
  return "🔐*lock Photo* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل عکس فعال بود🔐"
+ return "🔐قفل عکس از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_photo"] = "yes" 
@@ -1766,7 +1766,7 @@ local lock_photo = data[tostring(target)]["settings"]["lock_photo"]
 if not lang then
 return "🔓*lock Photo* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل عکس غیرفعال بود🔓"
+return "🔓قفل عکس از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_photo"] = "no"
@@ -1795,7 +1795,7 @@ if lock_video == "yes" then
 if not lang then
  return "🔐*lock Video* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل فیلم فعال بود🔐"
+ return "🔐قفل فیلم از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_video"] = "yes" 
@@ -1824,7 +1824,7 @@ local lock_video = data[tostring(target)]["settings"]["lock_video"]
 if not lang then
 return "🔓*lock Video* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل فیلم غیرفعال بود🔓"
+return "🔓قفل فیلم از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_video"] = "no"
@@ -1853,7 +1853,7 @@ if lock_audio == "yes" then
 if not lang then
  return "🔐*lock Audio* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل آهنگ فعال بود🔐"
+ return "🔐قفل آهنگ از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_audio"] = "yes" 
@@ -1882,7 +1882,7 @@ local lock_audio = data[tostring(target)]["settings"]["lock_audio"]
 if not lang then
 return "🔓*lock Audio* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل آهنگ غیرفعال بود🔓"
+return "🔓قفل آهنگ از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_audio"] = "no"
@@ -1911,7 +1911,7 @@ if lock_voice == "yes" then
 if not lang then
  return "🔐*lock Voice* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل صدا فعال بود🔐"
+ return "🔐قفل صدا از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_voice"] = "yes" 
@@ -1940,7 +1940,7 @@ local lock_voice = data[tostring(target)]["settings"]["lock_voice"]
 if not lang then
 return "🔓*lock Voice* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل صدا غیرفعال بود🔓"
+return "🔓قفل صدا از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_voice"] = "no"
@@ -1969,7 +1969,7 @@ if lock_sticker == "yes" then
 if not lang then
  return "🔐*lock Sticker* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل استیکر فعال بود🔐"
+ return "🔐قفل استیکراز قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_sticker"] = "yes" 
@@ -1998,7 +1998,7 @@ local lock_sticker = data[tostring(target)]["settings"]["lock_sticker"]
 if not lang then
 return "🔓*lock Sticker* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل استیکر غیرفعال بود🔓"
+return "🔓قفل استیکراز قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_sticker"] = "no"
@@ -2027,7 +2027,7 @@ if lock_contact == "yes" then
 if not lang then
  return "🔐*lock Contact* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل مخاطب فعال بود🔐"
+ return "🔐قفل مخاطب از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_contact"] = "yes" 
@@ -2056,7 +2056,7 @@ local lock_contact = data[tostring(target)]["settings"]["lock_contact"]
 if not lang then
 return "🔓*lock Contact* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل مخاطب غیرفعال بود🔓"
+return "🔓قفل مخاطب از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_contact"] = "no"
@@ -2085,7 +2085,7 @@ if lock_forward == "yes" then
 if not lang then
  return "🔐*lock Forward* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل فوروارد فعال بود🔐"
+ return "🔐قفل فوروارد از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_forward"] = "yes" 
@@ -2114,7 +2114,7 @@ local lock_forward = data[tostring(target)]["settings"]["lock_forward"]
 if not lang then
 return "🔓*lock Forward* _Is Already Disabled_🔓"
 elseif lang then
-return "🔓قفل فوروارد غیرفعال بود🔓"
+return "🔓قفل فوروارد از قبل غیرفعال بود🔓"
 end 
 else 
 data[tostring(target)]["settings"]["lock_forward"] = "no"
@@ -2143,7 +2143,7 @@ if lock_location == "yes" then
 if not lang then
  return "🔐*lock Location* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل موقعیت فعال بود🔐"
+ return "🔐قفل موقعیت از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_location"] = "yes" 
@@ -2172,7 +2172,7 @@ local lock_location = data[tostring(target)]["settings"]["lock_location"]
 if not lang then
 return "🔓*lock Location* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل موقعیت غیرفعال بود🔓"
+return "🔓قفل موقعیت از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_location"] = "no"
@@ -2201,7 +2201,7 @@ if lock_document == "yes" then
 if not lang then
  return "🔐*lock Document* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل فایل فعال بود🔐"
+ return "🔐قفل فایل از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_document"] = "yes" 
@@ -2230,7 +2230,7 @@ local lock_document = data[tostring(target)]["settings"]["lock_document"]
 if not lang then
 return "🔓*lock Document* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل فایل غیرفعال بود🔓"
+return "🔓قفل فایل از قبل غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_document"] = "no"
@@ -2259,7 +2259,7 @@ if lock_tgservice == "yes" then
 if not lang then
  return "🔐*lock TgService* _Is Already Enabled_🔐"
 elseif lang then
- return "🔐قفل سرویس تلگرام فعال بود🔐"
+ return "🔐قفل سرویس تلگرام از قبل فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_tgservice"] = "yes" 
@@ -2288,7 +2288,7 @@ local lock_tgservice = data[tostring(target)]["settings"]["lock_tgservice"]
 if not lang then
 return "🔓*lock TgService* _Is Already Disabled_🔓"
 elseif lang then
-return "🔓قفل سرویس تلگرام غیرفعال بود🔓"
+return "🔓قفل سرویس تلگرام از قبل غیرفعال بود🔓"
 end 
 else 
 data[tostring(target)]["settings"]["lock_tgservice"] = "no"
@@ -2896,52 +2896,52 @@ if matches[1] == "help" and is_mod(msg) then
 if not lang then
 text = [[
 [Help for richenergy]
-⬛️》 ENERGY HELP ⬛️
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⬛️》 AYTOR ⬛️
+❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤
 ◽️》 !mod help
 ◾️》راهنما مدیریت
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤
 ◽️》 !lock help
 ◾️》راهنما قفل
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤
 ◽️》 !sudo help
 ◾️》راهنما سودو
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤
 ◽️》 !fun help
 ◾️》راهنما فان
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤
 
 ‼️ توجه ‼️
 دستورات هم انگلیسی هستند هم فارسی میتوانید بنویسید 👇
 
  راهنما قفل   👉👈  lock help!   
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖powered by: *@mafia_boy*]]
+❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤
+🔖powered by: *@www_sik_ir*]]
 
 elseif lang then
 text = [[
 [Help for richenergy]
-⬛️》 ENERGY HELP ⬛️
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⬛️》 AYTOR ⬛️
+❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤
 ◽️》 !mod help
 ◾️》راهنما مدیریت
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤
 ◽️》 !lock help
 ◾️》راهنما قفل
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤
 ◽️》 !sudo help
 ◾️》راهنما سودو
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤
 ◽️》 !fun help
 ◾️》راهنما فان
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤❃➤
 
 ‼️ توجه ‼️
 دستورات هم انگلیسی هستند هم فارسی میتوانید بنویسید 👇
 
  راهنما قفل   👉👈  lock help!   
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖powered by: *@mafia_boy*]]
+🔖powered by: *@www_sik_ir*]]
 end
 return text
 end
